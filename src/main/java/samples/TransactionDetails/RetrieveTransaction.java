@@ -36,7 +36,7 @@ public class RetrieveTransaction {
 
     public static TssV2TransactionsGet200Response run() throws InterruptedException {
 //        String id = SimpleAuthorizationInternet.run().getId();
-        String id = "7503797321226560804884";
+        String id = "7513168692316211403813";
 
 //        Thread.sleep(15000);
 
@@ -45,7 +45,7 @@ public class RetrieveTransaction {
             System.out.println(id.getClass());
 //            merchantProp = Configuration.getMerchantDetails();
 //			merchantProp = Configuration.getMyMerchantDetails();
-            merchantProp = Configuration.getProdMerchantDetails();
+            merchantProp = Configuration.getSSDetails();
             ApiClient apiClient = new ApiClient();
             MerchantConfig merchantConfig = new MerchantConfig(merchantProp);
             apiClient.merchantConfig = merchantConfig;
