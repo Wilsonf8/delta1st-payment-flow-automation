@@ -26,7 +26,7 @@ public class TransactionDetailsFromRequestId {
 
        TssV2TransactionsGet200Response result = null;
        try {
-           merchantProp = Configuration.getProdMerchantDetails();
+           merchantProp = Configuration.getProdMerchantDetails(); // Gets merchant details
            ApiClient apiClient = new ApiClient();
            MerchantConfig merchantConfig = new MerchantConfig(merchantProp);
            apiClient.merchantConfig = merchantConfig;

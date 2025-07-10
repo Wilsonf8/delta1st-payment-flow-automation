@@ -9,11 +9,28 @@
     <name>SampleCode</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        <!-- rest client dependency -->
         <dependency>
             <groupId>com.cybersource</groupId>
             <artifactId>cybersource-rest-client-java</artifactId>
-            <version>0.0.77</version>
+            <version>0.0.42</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.transaction/javax.transaction-api -->
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>javax.transaction-api</artifactId>
+            <version>1.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.cybersource/cybersource-sdk-java -->
+        <dependency>
+            <groupId>com.cybersource</groupId>
+            <artifactId>cybersource-sdk-java</artifactId>
+            <version>6.2.15</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.cybersource/AuthenticationSdk -->
+        <dependency>
+            <groupId>com.cybersource</groupId>
+            <artifactId>AuthenticationSdk</artifactId>
+            <version>0.0.36</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>

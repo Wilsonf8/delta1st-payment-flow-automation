@@ -12,7 +12,8 @@ public class DatabaseManager {
     public static void initializeDataSource() {
         HikariConfig config = new HikariConfig();
         // Configure HikariCP properties (JDBC URL, username, password, pool size, etc.)
-        config.setJdbcUrl("jdbc:mysql://localhost:5000/ss-service-avs-service");
+//        config.setJdbcUrl("jdbc:mysql://localhost:5000/ss-service-avs-service");
+        config.setJdbcUrl("jdbc:mysql://localhost:5000/ss-food-wilsonfoodtest");
         config.setUsername("trainee_readonly");
         config.setPassword("k21jBncdIP7iWIk7Dqti");
         config.setMaximumPoolSize(10); // Example pool size
