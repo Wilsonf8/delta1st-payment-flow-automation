@@ -23,6 +23,7 @@ public class SSHTunnel {
             JSch jsch = new JSch();
             jsch.addIdentity(privateKeyPath);
             Session session = jsch.getSession(sshUser, sshHost, sshPort);
+
             session.setConfig("StrictHostKeyChecking", "no");
             session.connect();
             session.setPortForwardingL(localPort, remoteHost, remotePort);
